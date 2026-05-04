@@ -111,13 +111,9 @@ var CustomImportScript = (() => {
 
   // tools/importer/parsers/embed.js
   function parse3(element, { document }) {
-    const heading = element.querySelector("h1.vs-title, .vs-title-content h1, .vs-title-content h2");
     const panelImage = element.querySelector(".vs-panel img, .vs-body img");
     const cells = [];
     const contentCell = [];
-    if (heading) {
-      contentCell.push(heading);
-    }
     if (panelImage) {
       contentCell.push(panelImage);
     }

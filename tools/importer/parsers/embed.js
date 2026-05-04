@@ -14,9 +14,6 @@
  * embed block.
  */
 export default function parse(element, { document }) {
-  // Extract the showroom title heading
-  const heading = element.querySelector('h1.vs-title, .vs-title-content h1, .vs-title-content h2');
-
   // Extract the panel image (vehicle showcase image)
   const panelImage = element.querySelector('.vs-panel img, .vs-body img');
 
@@ -24,16 +21,13 @@ export default function parse(element, { document }) {
   // Standard embed: one row with content representing the embedded widget
   const cells = [];
 
-  // Row 1: Heading and image content representing the showroom
+  // Row 1: Image content representing the showroom (heading excluded intentionally)
   const contentCell = [];
-  if (heading) {
-    contentCell.push(heading);
-  }
   if (panelImage) {
     contentCell.push(panelImage);
   }
 
-  // If neither heading nor image found, create a placeholder link to source
+  // If no image found, create a placeholder link to source
   if (contentCell.length === 0) {
     const link = document.createElement('a');
     link.href = 'https://www.hyundai.com.br/';
