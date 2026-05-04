@@ -1,0 +1,18 @@
+{
+  "status": "success",
+  "url": "https://www.hyundai.com.br/",
+  "path": "index",
+  "timestamp": "2026-05-04T19:37:27.671Z",
+  "title": "Hyundai Motor Brasil",
+  "template": "homepage",
+  "blocks": [
+    "carousel",
+    "hero",
+    "embed",
+    "cards",
+    "cards",
+    "cards",
+    "columns",
+    "columns"
+  ]
+}

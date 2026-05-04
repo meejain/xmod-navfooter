@@ -1,0 +1,108 @@
+{
+  "metadata": {
+    "projectType": "doc"
+  },
+  "templates": [
+    {
+      "name": "homepage",
+      "urls": ["https://www.hyundai.com.br/"],
+      "description": "Hyundai Brazil homepage with hero carousel, vehicle showcase, and promotional content",
+      "blocks": [
+        {
+          "name": "carousel",
+          "instances": [".hyundai-carousel-container"]
+        },
+        {
+          "name": "hero",
+          "instances": [".full-video-page"]
+        },
+        {
+          "name": "embed",
+          "instances": [".vehicle-showroom"]
+        },
+        {
+          "name": "cards",
+          "instances": [".mosaic", ".offers-slider"]
+        },
+        {
+          "name": "columns",
+          "instances": [".call-page", ".link-hub"]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1-hero-carousel",
+          "name": "Hero Carousel",
+          "selector": ".hyundai-carousel-container",
+          "style": null,
+          "blocks": ["carousel"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2-vehicle-video",
+          "name": "Vehicle Video Feature",
+          "selector": "#_content_hmb_br_jcr_content_root_responsivegrid_container_colors",
+          "style": null,
+          "blocks": ["hero"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-3-vehicle-showroom",
+          "name": "Vehicle Showroom",
+          "selector": "#_content_hmb_br_jcr_content_root_responsivegrid_container_colors_1111485370",
+          "style": null,
+          "blocks": ["embed"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-4-mosaic",
+          "name": "Promotional Mosaic",
+          "selector": "#_content_hmb_br_jcr_content_root_responsivegrid_container_colors_1161884039",
+          "style": null,
+          "blocks": ["cards"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-5-offers",
+          "name": "Offers Slider",
+          "selector": "#_content_hmb_br_jcr_content_root_responsivegrid_container_colors_854163895",
+          "style": null,
+          "blocks": ["cards"],
+          "defaultContent": [".os-texts-home h2", ".os-texts-home h3"]
+        },
+        {
+          "id": "section-6-call-page",
+          "name": "Call to Action",
+          "selector": "#_content_hmb_br_jcr_content_root_responsivegrid_container_colors_904966112",
+          "style": null,
+          "blocks": ["columns"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-7-link-hub",
+          "name": "Owners Link Hub",
+          "selector": "#_content_hmb_br_jcr_content_root_responsivegrid_container_colors_354976112",
+          "style": null,
+          "blocks": ["columns"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-8-secondary-mosaic",
+          "name": "Secondary Mosaic",
+          "selector": "#_content_hmb_br_jcr_content_root_responsivegrid_container_colors_1796570009",
+          "style": null,
+          "blocks": ["cards"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-9-footer",
+          "name": "Footer",
+          "selector": ".hyundai-footer",
+          "style": "dark",
+          "blocks": [],
+          "defaultContent": []
+        }
+      ]
+    }
+  ]
+}
